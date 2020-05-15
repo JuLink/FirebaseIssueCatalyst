@@ -7,6 +7,10 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestoreSwift
+import FirebaseAuth
+import FirebaseFirestore
 
 struct ContentView: View {
     var body: some View {
