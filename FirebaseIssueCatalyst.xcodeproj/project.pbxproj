@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,7 @@
 		90F0ED00246E80A800138ACC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90F0ED03246E80A800138ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90F0ED05246E80A800138ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F0ED0B246E830C00138ACC /* FirebaseIssueCatalyst.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseIssueCatalyst.entitlements; sourceTree = "<group>"; };
 		AE950562637CBC19D82A8B29 /* Pods_FirebaseIssueCatalyst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseIssueCatalyst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +49,6 @@
 				34DD510F35AFA0B9E73F8192 /* Pods-FirebaseIssueCatalyst.debug.xcconfig */,
 				882888FDB5E8C849E7BC81D3 /* Pods-FirebaseIssueCatalyst.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +81,7 @@
 		90F0ECF6246E80A600138ACC /* FirebaseIssueCatalyst */ = {
 			isa = PBXGroup;
 			children = (
+				90F0ED0B246E830C00138ACC /* FirebaseIssueCatalyst.entitlements */,
 				90F0ECF7246E80A600138ACC /* AppDelegate.swift */,
 				90F0ECF9246E80A600138ACC /* SceneDelegate.swift */,
 				90F0ECFB246E80A600138ACC /* ContentView.swift */,
@@ -354,6 +355,7 @@
 			baseConfigurationReference = 34DD510F35AFA0B9E73F8192 /* Pods-FirebaseIssueCatalyst.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseIssueCatalyst/FirebaseIssueCatalyst.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseIssueCatalyst/Preview Content\"";
 				DEVELOPMENT_TEAM = S8PSZR3SBT;
@@ -365,6 +367,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.bryo.FirebaseIssueCatalyst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -375,6 +378,7 @@
 			baseConfigurationReference = 882888FDB5E8C849E7BC81D3 /* Pods-FirebaseIssueCatalyst.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseIssueCatalyst/FirebaseIssueCatalyst.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseIssueCatalyst/Preview Content\"";
 				DEVELOPMENT_TEAM = S8PSZR3SBT;
@@ -386,6 +390,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.bryo.FirebaseIssueCatalyst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
